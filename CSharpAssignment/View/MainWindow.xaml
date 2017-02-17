@@ -1,0 +1,21 @@
+﻿<Window x:Class="CSharpAssignment.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpAssignment.View"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="308.642" Width="454.938">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="172*"/>
+            <ColumnDefinition Width="49*"/>
+            <ColumnDefinition Width="226*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="SearchBtn" Content="Search" HorizontalAlignment="Left" Margin="29,0,0,25" VerticalAlignment="Bottom" Width="75"/>
+        <Button x:Name="CountBtn" Content="Count" Margin="19,0,181,25" VerticalAlignment="Bottom" Grid.Column="1" Grid.ColumnSpan="2"/>
+        <Button x:Name="Create" Content="Create" HorizontalAlignment="Right" Margin="0,0,35,25" VerticalAlignment="Bottom" Width="75" Grid.Column="2"/>
+        <DataGrid x:Name="tutorialGrid" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="3" Height="192" Width="437"/>
+
+    </Grid>
+</Window>

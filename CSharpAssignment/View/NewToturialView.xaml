@@ -1,0 +1,34 @@
+﻿<Window x:Class="CSharpAssignment.View.NewToturialView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CSharpAssignment.View"
+        mc:Ignorable="d"
+        Title="NewToturialView" Height="511.667" Width="493.333">
+    <Grid RenderTransformOrigin="0.5,0.5" Margin="0,0,-4,0">
+        <Grid.RenderTransform>
+            <TransformGroup>
+                <ScaleTransform/>
+                <SkewTransform/>
+                <RotateTransform Angle="0.018"/>
+                <TranslateTransform/>
+            </TransformGroup>
+        </Grid.RenderTransform>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="292*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Select a Year" HorizontalAlignment="Left" Margin="79,72,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Select a Semester" HorizontalAlignment="Left" Margin="62,192,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy1" Content="Select a Teacher" HorizontalAlignment="Left" Margin="62,241,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Select a Subject" HorizontalAlignment="Left" Margin="62,0,0,160" VerticalAlignment="Bottom"/>
+        <ComboBox x:Name="SemestersComboBox" HorizontalAlignment="Right" Margin="0,196,102,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="TeachersComboBox" HorizontalAlignment="Right" Margin="0,245,102,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="SubjectsComboBox" HorizontalAlignment="Right" Margin="0,0,102,160" VerticalAlignment="Bottom" Width="120"/>
+        <Button x:Name="CreateTutorialBtn" Content="Ok" HorizontalAlignment="Right" Margin="0,0,36,60" VerticalAlignment="Bottom" Width="75" Click="CreateTutorialBtn_Click"/>
+        <Button x:Name="Cancel_tutorialBtn" Content="Cancel" HorizontalAlignment="Left" Margin="62,0,0,60" VerticalAlignment="Bottom" Width="75" Click="button_Copy_Click"/>
+        <ComboBox x:Name="yearComboBox" HorizontalAlignment="Left" Margin="235,76,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
